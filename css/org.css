@@ -1,0 +1,12 @@
+body {
+    padding: 10px;
+    backgroun-color:   #d5d8d3;           /*alaskan husky*/
+    color:  #5f5f5f;
+}
+h1, h4, h5, h6 {
+    color:  #314f67; /*caribean teal*/
+}
+h4 {
+    padding-top: 10px;
+    text-align: center;
+}
