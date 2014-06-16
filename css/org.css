@@ -1,12 +1,45 @@
 body {
     padding: 10px;
-    backgroun-color:   #d5d8d3;           /*alaskan husky*/
+    background-color:   #d5d8d3;           /*alaskan husky*/
     color:  #5f5f5f;
 }
-h1, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
+    text-align: center;
     color:  #314f67; /*caribean teal*/
 }
-h4 {
+h2, h3 {
     padding-top: 10px;
     text-align: center;
+    background-color: #5f5f5f;
+    color:  #d5d8d3;
+}
+
+
+@media print {
+
+    /* Tom Hanks */
+
+    h1, h2, h3, h4, h5, h6
+    {
+        font-size: 90%;
+    }
+    body {
+        font-size: 75%;
+    }
+
+
+    /* Hide stuff */
+
+    #table-of-contents {
+        display:none;
+    }
+
+
+    /* Page break before stuff */
+
+    #outline-container-sec-8,  /* Achievements */
+    #outline-container-sec-9 { /* Skill Matrix */
+        page-break-before:always;
+    }
+
 }
