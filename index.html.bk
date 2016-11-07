@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Resume of Simon Eames</title>
+<!-- 2016-03-30 Wed 12:46 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-51981407-1', 'sreal.github.io'); ga('send', 'pageview'); </script>
+<link rel="stylesheet" title="Standard" href="css/bootstrap.min.css" type="text/css" />
+</head>
+<body>
+<div id="content">
+<h1 class="title">Resume of Simon Eames</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">Contact</a></li>
+<li><a href="#sec-2">Summary</a></li>
+<li><a href="#sec-3">Technology</a></li>
+<li><a href="#sec-4">Roles</a></li>
+<li><a href="#sec-5">Education</a></li>
+<li><a href="#sec-6">About</a></li>
+<li><a href="#sec-7">References</a></li>
+<li><a href="#sec-8">Experiences</a>
+<ul>
+<li><a href="#sec-8-1">.NET Contracting</a></li>
+<li><a href="#sec-8-2">MVP Funding Proposal</a></li>
+<li><a href="#sec-8-3">Startup Engineer</a></li>
+<li><a href="#sec-8-4">.NET Engineer</a></li>
+<li><a href="#sec-8-5">Team Lead</a></li>
+<li><a href="#sec-8-6">Mobile Development (Business)</a></li>
+<li><a href="#sec-8-7">Mobile Development (Personal)</a></li>
+<li><a href="#sec-8-8">System Automation</a></li>
+<li><a href="#sec-8-9">Unified Access Gateway Customization and Install</a></li>
+<li><a href="#sec-8-10">Test Framework</a></li>
+<li><a href="#sec-8-11">Custom In-House Tools</a></li>
+<li><a href="#sec-8-12">Technology Refresh and System Rebuild</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1" class="outline-2 col-sm-6 col-md-12">
+<h2 id="sec-1">Contact</h2>
+<div class="outline-text-2" id="text-1">
+
+<p>
+<a href="mailto:simon.richard.eames+resume@gmail.com">@gmail</a>
+</p>
+
+<p>
+<a href="http://www.linkedin.com/in/simoneames">@linkedin</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2 col-sm-6 col-md-4">
+<h2 id="sec-2">Summary</h2>
+<div class="outline-text-2" id="text-2">
+
+<p>
+A full-stack leader who likes to get stuff built.
+</p>
+
+<ul class="org-ul">
+<li>Open and .NET stack,
+</li>
+<li>Remote and international teams,
+</li>
+<li>Team lead,
+</li>
+<li>Agile,
+</li>
+<li>Web and Mobile application development,
+</li>
+<li>Startup to large scale (First 4 to 40k users),
+</li>
+<li>System automation,
+</li>
+<li>Server and system configuration and upgrade.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2 col-sm-6 col-md-4">
+<h2 id="sec-3">Technology</h2>
+<div class="outline-text-2" id="text-3">
+
+<ul class="org-ul">
+<li>Full stack
+</li>
+<li>.NET 4.5, Win, C#
+</li>
+<li>Python, Flask, PyMongo, unittest,
+</li>
+<li>JavaScript, AngularJS, Knockout, Grunt, Gulp, Jasmine, Underscore,
+</li>
+<li>PowerShell, Bash,
+</li>
+<li>MSSQL,
+</li>
+<li>GIT, SVN,
+</li>
+<li>Vagrant, Puppet, Jenkins, Teamcity,
+</li>
+<li>Heroku, UmbracoCMS, Apple Provisioning, Microsoft Store,
+</li>
+<li>Emacs, Visual Studio, xCode
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-4" class="outline-2 col-sm-6 col-md-4">
+<h2 id="sec-4">Roles</h2>
+<div class="outline-text-2" id="text-4">
+
+<ul class="org-ul">
+<li>2014 to -:
+<ul class="org-ul">
+<li>Montreal, Canada
+</li>
+<li>Software Engineer
+</li>
+<li>BCA Research inc
+</li>
+</ul>
+</li>
+<li>2013 to 2014:
+<ul class="org-ul">
+<li>Vancouver, Canada
+</li>
+<li>Software Engineer
+</li>
+<li>Eventsage pty ltd
+</li>
+</ul>
+</li>
+<li>2009 to 2013:
+<ul class="org-ul">
+<li>Brisbane, Australia
+</li>
+<li>Software Engineer
+</li>
+<li>icemedia pty ltd
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2 col-sm-6 col-md-6">
+<h2 id="sec-5">Education</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>University of Queensland, Brisbane, Australia
+<ul class="org-ul">
+<li>Engineering (Software)
+</li>
+<li>Business Management (Management and Organizations)
+</li>
+</ul>
+</li>
+<li>Anglican Church Grammar School, Brisbane, Australia
+<ul class="org-ul">
+<li>Senior Certificate
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-6" class="outline-2 col-sm-6 col-md-6">
+<h2 id="sec-6">About</h2>
+<div class="outline-text-2" id="text-6">
+
+<p>
+I like to help others build get stuff built and build things for myself.
+</p>
+
+<p>
+Often, I have a <a href="https://www.flickr.com/photos/sreal">camera</a> with me.
+</p>
+
+<p>
+My French is pretty bad, but I am working on it.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2 col-sm-12 col-md-12">
+<h2 id="sec-7">References</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+You just have to <a href="mailto:simon.richard.eames+resume@gmail.com">ask</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-8" class="outline-2 col-sm-12 col-md-12">
+<h2 id="sec-8">Experiences</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+
+<div id="outline-container-sec-8-1" class="outline-3">
+<h3 id="sec-8-1">.NET Contracting</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+Large scale development of edge.bcaresearch.com and related internal and external products.
+</p>
+
+<p>
+Involved:
+</p>
+<ul class="org-ul">
+<li>International team coordination
+</li>
+<li>Lead developer role
+</li>
+<li>Enterprise scale software
+</li>
+<li>Agile development
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-8-1-1" class="outline-4">
+<h4 id="sec-8-1-1">Keywords:</h4>
+<div class="outline-text-4" id="text-8-1-1">
+<p>
+.NET, C#, AngularJS, Knockout, MSSQL, MarkLogic, Solr, OWMLim, Jira
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8-2" class="outline-3">
+<h3 id="sec-8-2">MVP Funding Proposal</h3>
+<div class="outline-text-3" id="text-8-2">
+<p>
+Lead engineer for MVP build of Engineers Without Borders Global Clearing House Initiative
+</p>
+
+<p>
+Involved:
+</p>
+<ul class="org-ul">
+<li>Chief technical lead
+</li>
+<li>Open stack development
+</li>
+<li>Complete project build
+</li>
+<li>Agile development
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-8-2-1" class="outline-4">
+<h4 id="sec-8-2-1">Keywords:</h4>
+<div class="outline-text-4" id="text-8-2-1">
+<p>
+Open stack, Python, JavaScript, Angular, Django, Vagrant, Puppet, Heroku
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8-3" class="outline-3">
+<h3 id="sec-8-3">Startup Engineer</h3>
+<div class="outline-text-3" id="text-8-3">
+<p>
+Full open stack engineering for startup Eventsage.com
+</p>
+
+<p>
+Involved:
+</p>
+<ul class="org-ul">
+<li>TDD practices
+</li>
+<li>Open stack development environment
+</li>
+<li>Startup environment (small team)
+</li>
+<li>Continuous Integration server setup
+</li>
+<li>Redesign and build of process for initial customer engagement
+</li>
+<li>Agile development
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-8-3-1" class="outline-4">
+<h4 id="sec-8-3-1">Keywords:</h4>
+<div class="outline-text-4" id="text-8-3-1">
+<p>
+Open stack, Python, Flask, JavaScript, Angular, MongoDB, PyMongo, Vagrant, Puppet, Heroku
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8-4" class="outline-3">
+<h3 id="sec-8-4">.NET Engineer</h3>
+<div class="outline-text-3" id="text-8-4">
+<p>
+Full stack engineering on medium-large scale application
+</p>
+
+<p>
+Involved:
+</p>
+<ul class="org-ul">
+<li>.NET 4.5 (C#) development in Visual Studio
+</li>
+<li>Data Access with nHibernate, and Custom SQL data access layer
+</li>
+<li>Client side page and control development with Web Forms, Razor, JavaScript, jQuery, Ajax Toolkit
+</li>
+<li>PDF generation with Prince XML
+</li>
+<li>Implemented Windows Workflow Foundation module
+</li>
+<li>Implemented notification system via email with XML and XSLT
+</li>
+<li>Solution Scripting with nAnt and PowerShell
+</li>
+<li>Automated Testing via MSTest and Jenkins CI
+</li>
+<li>Logging, AOP and web services with Spring.NET
+</li>
+<li>Requirement gathering and business analysis
+</li>
+<li>Issue tracking in SharePoint
+</li>
+<li>Schedule Tasks in Quartz.NET
+</li>
+<li>Reporting using MSSQL Reporting Services
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-8-4-1" class="outline-4">
+<h4 id="sec-8-4-1">Keywords:</h4>
+<div class="outline-text-4" id="text-8-4-1">
+<p>
+.NET 4.5, C#, MSSQL, XSLT, JavaScript, LINQ,
+Visual Studio, Spring.NET, log4net, Prince XML, Quartz.NET
+Windows Workflow Foundation, Prince XML,
+PowerShell, nAnt, MSTest, SVN, RDP
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8-5" class="outline-3">
+<h3 id="sec-8-5">Team Lead</h3>
+<div class="outline-text-3" id="text-8-5">
+<p>
+Worked as technical lead on multiple Umbraco CMS Sites with a small team of designers and developers.
+</p>
+
+<p>
+Involved:
+</p>
+<ul class="org-ul">
+<li>Sites: Defence Reserves Support Network, RAAF Amberley Heritage Center, ADFC Youth HQ, Migration Agents Registration Authority
+</li>
+<li>Full Life Cycle Team (inexperienced PM, graphic design, front-end, back-end developers)
+</li>
+<li>Mentoring developers and designers with developer set-up, C#, and version control.
+</li>
+<li>Helping developers (who had never touched the .NET framework) build custom Umbraco public facing components and new administration sections
+</li>
+<li>Mentored inexperienced, non-technical project manager with requirement gathering, quotes and managing client expectation
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-8-5-1" class="outline-4">
+<h4 id="sec-8-5-1">Keywords:</h4>
+<div class="outline-text-4" id="text-8-5-1">
+<p>
+Technical lead, Mentoring, Project management
+Requirements gathering, Business analysis, Managing client expectations,
+Umbraco CMS, XSLT, .NET, C#, GIT, SQL
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8-6" class="outline-3">
+<h3 id="sec-8-6">Mobile Development (Business)</h3>
+<div class="outline-text-3" id="text-8-6">
+<p>
+Built and created the ADFC Occupation Health and Safety iOS application
+</p>
+
+<p>
+Involved:
+</p>
+<ul class="org-ul">
+<li>Implemented a iOS application.
+</li>
+<li>Implemented a SOA for access to external application data.
+</li>
+<li>Prototyped in iOS, Mono Touch.
+</li>
+<li>Create, install and configure Apple Provisioning Profiles (developer, ad-hoc &amp; distribution)
+</li>
+<li>Application through Test Flight API to multiple devices
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-8-6-1" class="outline-4">
+<h4 id="sec-8-6-1">Keywords:</h4>
+<div class="outline-text-4" id="text-8-6-1">
+<p>
+iOS, Mono Touch/Xamarin,
+SOA, XML, JSON, Objective-C,
+Apple Provisioning and Distribution, Test Flight
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8-7" class="outline-3">
+<h3 id="sec-8-7">Mobile Development (Personal)</h3>
+<div class="outline-text-3" id="text-8-7">
+<p>
+Various (iOS, Win, Unity)
+</p>
+
+<p>
+Involved:
+</p>
+<ul class="org-ul">
+<li>Design, build, release and support of applications and related websites
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-8-7-1" class="outline-4">
+<h4 id="sec-8-7-1">Keywords:</h4>
+<div class="outline-text-4" id="text-8-7-1">
+<p>
+App design,
+iOS, xCode, C#, XAML
+Objective-C, Visual Studio, Unity,
+Apple Provisioning and Distribution, Window Store Distribution
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8-8" class="outline-3">
+<h3 id="sec-8-8">System Automation</h3>
+<div class="outline-text-3" id="text-8-8">
+<p>
+Replace hand built build and release processes with automatic and single click build and release processes.
+</p>
+
+<p>
+Involved:
+</p>
+<ul class="org-ul">
+<li>Single click package creation and single click install, due to installing in the highly restrictive Australian Defence Force Servers (e.g. no physical or external access)
+</li>
+<li>Removing the possibility of human error from the release process.
+</li>
+<li>Installing and setting up Jenkins CI for continuous integration building and automating release built from SVN and GIT sources.
+</li>
+<li>Automating nightly release for TEST environment (Environment includes .NET web applications, IIS configuration, database upgrades, and installing SharePoint, Exchange, UAG, FuseTalk, Moodle PowerShell customizations via PowerShell remote scripts)
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-8-8-1" class="outline-4">
+<h4 id="sec-8-8-1">Keywords:</h4>
+<div class="outline-text-4" id="text-8-8-1">
+<p>
+Continuous Integration, Automation, Release Engineering, Restrictive Environment,
+PowerShell, PS Remoting, nAnt, IIS, SVN, GIT
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8-9" class="outline-3">
+<h3 id="sec-8-9">Unified Access Gateway Customization and Install</h3>
+<div class="outline-text-3" id="text-8-9">
+<p>
+Replaced a custom Single Sign On Solution with a customized Unified Access Gateway implementation .
+</p>
+
+<p>
+Involved:
+</p>
+<ul class="org-ul">
+<li>Configuring and customizing a master-slave UAG install to include:
+</li>
+<li>Custom pages
+</li>
+<li>Integrate multiple service authentication methods (Exchange, SharePoint, Web Services, 3rd party access, FuseTalk, Moodle, mobile applications) using the same authentication store (AD &amp; SQL)
+</li>
+<li>Maintain Single Sign On ability.
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-8-9-1" class="outline-4">
+<h4 id="sec-8-9-1">Keywords:</h4>
+<div class="outline-text-4" id="text-8-9-1">
+<p>
+Unified Access Gateway (UAG), Single Sign On, AD, SQL
+.NET Authentication Providers, Basic Authentication
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8-10" class="outline-3">
+<h3 id="sec-8-10">Test Framework</h3>
+<div class="outline-text-3" id="text-8-10">
+<p>
+Designed and implemented a Selenium base testing framework for COMS.
+</p>
+
+<p>
+Involved:
+</p>
+<ul class="org-ul">
+<li>Created a .NET testing framework based on Spring.NET and generics to populate test data.
+</li>
+<li>Created a Selenium framework to allow browser based testing
+</li>
+<li>Testing product boundaries found in COMS like interaction between Exchange OWA and the COMS Web Applications
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-8-10-1" class="outline-4">
+<h4 id="sec-8-10-1">Keywords:</h4>
+<div class="outline-text-4" id="text-8-10-1">
+<p>
+Selenium, .NET, Spring.NET, MSTest
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8-11" class="outline-3">
+<h3 id="sec-8-11">Custom In-House Tools</h3>
+<div class="outline-text-3" id="text-8-11">
+<p>
+Identified, designed and implemented various tools for development.
+</p>
+
+<p>
+Involved:
+  Commit and Time Logger:
+</p>
+<ul class="org-ul">
+<li>Fetching and analyzing SVN repository logs
+</li>
+<li>Fetching and analyzing employee record database
+</li>
+<li>Present data in a usable form
+</li>
+</ul>
+
+<p>
+Business Analyst Statistics:
+</p>
+<ul class="org-ul">
+<li>Created tools and scripts to aid business analysis.
+</li>
+</ul>
+
+<p>
+Custom Profiling Tools:
+</p>
+<ul class="org-ul">
+<li>Page statistics
+</li>
+<li>User action tracking
+</li>
+<li>Database logging
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-8-12" class="outline-3">
+<h3 id="sec-8-12">Technology Refresh and System Rebuild</h3>
+<div class="outline-text-3" id="text-8-12">
+<p>
+Upgrade tools and framework in COMS. Involved in system wide technology refresh for a medium-large scale application
+</p>
+
+<p>
+Tools Refresh:
+</p>
+<ul class="org-ul">
+<li>.NET 2.0/3.5       -&gt; .NET 4.5
+</li>
+<li>Spring.NET 1.2     -&gt; Spring.NET 2.0
+</li>
+<li>nHibernate 2.1     -&gt; nHibernate 3.3.x
+</li>
+<li>Visual Studio 2005 -&gt; Visual Studio 2012
+</li>
+</ul>
+
+<p>
+Technology Refresh:
+</p>
+<ul class="org-ul">
+<li>Addition of Unified Access Gateway
+</li>
+<li>Exchange 2007      -&gt; Exchange 2010
+</li>
+<li>MSSQL 2005         -&gt; MSSQL 2008
+</li>
+<li>SharePoint 2007    -&gt; SharePoint 2010
+</li>
+</ul>
+
+<p>
+Involved:
+</p>
+<ul class="org-ul">
+<li>Disaster Recover Documentation
+</li>
+<li>Build TEST, STAGE, UAT and Prod environments
+</li>
+<li>Travel to Canberra and work inside Australia Defence Force Restricted Network to install UAT and PROD
+</li>
+<li>Complete system build and data restore, including;
+Rebuild servers, forest &amp; domain configuration, AD configuration &amp; rebuilt, database upgrade and restores, mail export &amp; re-import, 3rd party product installs &amp; data import&#x2026;)
+</li>
+</ul>
+</div>
+<div id="outline-container-sec-8-12-1" class="outline-4">
+<h4 id="sec-8-12-1">Keywords:</h4>
+<div class="outline-text-4" id="text-8-12-1">
+<p>
+Disaster Recover, Restrictive Environment, Server rebuilds
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status"
+<p class="date">Created: 2016-03-30 Wed 12:46</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
