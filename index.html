@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+    
     <head>
         <meta charset="utf-8">
         <title>Simon Richard Eames</title>
@@ -11,11 +11,11 @@
             * {
               box-sizing: border-box;
             }
-
+            
             main {
               display: block;
             }
-
+            
             body {
               font-family: 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Calibri', 'sans-serif';
               font-size: 15px;
@@ -25,12 +25,12 @@
               margin: 0;
               padding: 0;
             }
-
+            
             /* Typical page borders are awkward when rendered to PDF. */
             body.pdf {
               background-color: #FFFFFF;
             }
-
+            
             /* Adobe or wkhtmltopdf has issues with the <main> tag, so we use <div> for
             the PDF case, <main> for the HTML case, and style both via an ID. */
             #main {
@@ -39,26 +39,26 @@
               padding: 10px;
               border: 1px solid #E6E6E6;
             }
-
+            
             body.pdf > #main {
               border: none;
             }
-
+            
             #container > header {
               padding-top: 6em;
               padding-bottom: 1em;
             }
-
+            
             body.pdf #container > header {
               padding: 0;
             }
-
+            
             #main > #container > section {
               margin-left: 5em;
               position: relative;
               display: block;
             }
-
+            
             span.fa
             {
               position: absolute;
@@ -67,55 +67,55 @@
               font-size: 30px;
               color: #BFC1C3;
             }
-
+            
             hr {
               margin-top: 20px;
               margin-bottom: 20px;
               border: 0;
               border-top: 1px solid #EEE;
             }
-
+            
             .tenure, .keywords {
               font-size: 75%;
             }
-
+            
             h1 {
               margin: 0;
               font-size: 46px;
             }
-
+            
             h2 {
               font-size: 24px;
               color: #BFC1C3;
               text-transform: uppercase;
               font-weight: normal;
             }
-
+            
             h3 {
               margin-bottom: 0;
               font-size: 18px;
             }
-
+            
             a, a:visited {
               color: #428BCA;
               text-decoration: none;
               font-weight: bold;
             }
-
+            
             a:hover {
               text-decoration: underline;
             }
-
+            
             .defunct {
               color: #989898;
               font-weight: bold;
             }
-
+            
             #summary > p > strong {
               font-size: 1.25em;
             }
-
-
+            
+            
             .label-keyword {
               display: inline-block;
               background: #7eb0db;
@@ -126,7 +126,7 @@
               border-radius: 5px;
               margin-top: 2px;
             }
-
+            
             .card-skills {
                 position: relative;
             }
@@ -140,7 +140,7 @@
                 border-radius: 3px;
                 padding: 10px;
             }
-
+            
             .skill-level {
               border-radius: 3px;
               position: absolute;
@@ -181,25 +181,25 @@
                 margin-left: 20px;
               }
             }
-
+            
             .list-unstyled {
               padding-left: 0;
               list-style: none;
             }
-
+            
             .card-skills {
               position: relative;
             }
-
+            
             .space-top {
                 margin-top: 10px;
             }
-
+            
             #container {
               max-width: 800px;
               margin: 0 auto;
             }
-
+            
             #elevator-pitch {
               text-align: center;
               font-size: 24px;
@@ -207,21 +207,13 @@
               text-transform: uppercase;
               font-weight: normal;
             }
-
+            
             .res-label {
               font-style: italic;
             }
         </style>
-        <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-51981407-1', 'sreal.github.io');
-ga('send', 'pageview');
-        </script>
     </head>
-
+    
     <body>
         <main id="main">
             <div id="container">
@@ -232,7 +224,7 @@ ga('send', 'pageview');
                 </header>
                 <hr>
                 <section id="summary">
-                    <header> <span class="fa fa-lg fa-info"></span>
+                    <header> <span class="fa fa-lg fa-info"></span> 
                          <h2>info</h2>
 
                     </header> <strong>Simon Eames gets things built.</strong>
@@ -279,18 +271,21 @@ He has built for small
                             <div class="skill-info"> <strong>Enterprise Stack</strong>
 
                                 <div class="space-top labels"> <span class="label label-keyword">.net</span>
- <span class="label label-keyword">c#</span>
+ <span class="label label-keyword">dotnet core</span>
 
                                     <span
-                                    class="label label-keyword">csharp</span> <span class="label label-keyword">mvc.net</span>
- <span class="label label-keyword">windows</span>
+                                    class="label label-keyword">c#</span> <span class="label label-keyword">csharp</span>
+ <span class="label label-keyword">mvc.net</span>
 
                                         <span
-                                        class="label label-keyword">mssql</span> <span class="label label-keyword">marklogic</span>
- <span class="label label-keyword">powershell</span>
+                                        class="label label-keyword">.net core</span> <span class="label label-keyword">windows</span>
 
                                             <span
-                                            class="label label-keyword">iis</span> <span class="label label-keyword">specflow</span>
+                                            class="label label-keyword">mssql</span> <span class="label label-keyword">marklogic</span>
+ <span class="label label-keyword">powershell</span>
+
+                                                <span
+                                                class="label label-keyword">iis</span> <span class="label label-keyword">specflow</span>
 
                                 </div>
                             </div>
@@ -321,14 +316,13 @@ He has built for small
  <span class="label label-keyword">angular</span>
 
                                     <span
-                                    class="label label-keyword">angular 2</span> <span class="label label-keyword">knockout</span>
+                                    class="label label-keyword">react</span> <span class="label label-keyword">javascript</span>
+ <span class="label label-keyword">webpack</span>
 
                                         <span
-                                        class="label label-keyword">javascript</span> <span class="label label-keyword">gulp</span>
- <span class="label label-keyword">grunt</span>
+                                        class="label label-keyword">gulp</span> <span class="label label-keyword">grunt</span>
+ <span class="label label-keyword">sass</span>
 
-                                            <span
-                                            class="label label-keyword">sass</span>
                                 </div>
                             </div>
                         </li>
@@ -387,7 +381,7 @@ He has built for small
                 </section>
                 <hr>
                 <section id="employment">
-                    <header> <span class="fa fa-lg fa-building"></span>
+                    <header> <span class="fa fa-lg fa-building"></span> 
                          <h2>employment</h2>
 
                     </header>
@@ -409,7 +403,8 @@ He has built for small
                             <li>Development team lead during agile transformation as contractors where
                                 phased out for full-time staff.</li>
                             <li>Work across multiple companies, multiple teams, multiple timezones, and
-                                multiple projects large scale work, including 100 percent remote currently.</li>
+                                multiple projects large scale work</li>
+                            <li>Currently trusted with 100% remote work</li>
                             <li>Architect and build the development environments for use by external contractors.</li>
                         </ul>
                     </div>
@@ -482,12 +477,12 @@ He has built for small
                 </section>
                 <hr>
                 <section id="education">
-                    <header> <span class="fa fa-lg fa-mortar-board"></span>
+                    <header> <span class="fa fa-lg fa-mortar-board"></span> 
                          <h2>education</h2>
 
                     </header>
                     <div>
-
+                        
 <h3><em>BEng (Software)</em>,
 <a href="https://www.uq.edu.au/">University of Queensland</a>
 </h3>
@@ -497,7 +492,7 @@ He has built for small
                         <p>Bachelor of Engineering (Software)</p>
                     </div>
                     <div>
-
+                        
 <h3><em>BBusMgmt (Management and Organizations)</em>,
 <a href="https://www.uq.edu.au/">University of Queensland</a>
 </h3>
@@ -507,7 +502,7 @@ He has built for small
                         <p>Bachelor of Business Management (Management and Organizations)</p>
                     </div>
                     <div>
-
+                        
 <h3><em>Senior Certificate</em>,
 <a href="http://www.churchie.com.au/">Anglican Church Grammar School</a>
 </h3>
@@ -518,7 +513,7 @@ He has built for small
                 </section>
                 <hr>
                 <section id="affiliation">
-                    <header> <span class="fa fa-lg fa-share-alt"></span>
+                    <header> <span class="fa fa-lg fa-share-alt"></span> 
                          <h2>affiliation</h2>
 
                     </header>
@@ -543,7 +538,7 @@ He has built for small
                 </section>
                 <hr>
                 <section id="recognition">
-                    <header> <span class="fa fa-lg fa-trophy"></span>
+                    <header> <span class="fa fa-lg fa-trophy"></span> 
                          <h2>recognition</h2>
 
                     </header>
@@ -555,7 +550,7 @@ He has built for small
                 </section>
                 <hr>
                 <section id="references">
-                    <header> <span class="fa fa-lg fa-thumbs-o-up"></span>
+                    <header> <span class="fa fa-lg fa-thumbs-o-up"></span> 
                          <h2>references</h2>
 
                     </header>
@@ -567,7 +562,7 @@ He has built for small
                 </section>
                 <hr>
                 <section id="interests">
-                    <header> <span class="fa fa-lg fa-bicycle"></span>
+                    <header> <span class="fa fa-lg fa-bicycle"></span> 
                          <h2>interests</h2>
 
                     </header>
