@@ -1,640 +1,363 @@
-<!DOCTYPE html>
-<html>
-    
-    <head>
-        <meta charset="utf-8">
-        <title>Simon Richard Eames</title>
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic'
-        rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <style>
-            * {
-              box-sizing: border-box;
-            }
-            
-            main {
-              display: block;
-            }
-            
-            body {
-              font-family: 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Calibri', 'sans-serif';
-              font-size: 15px;
-              color: #333;
-              line-height: 1.42857143;
-              background-color: #F0F0F0;
-              margin: 0;
-              padding: 0;
-            }
-            
-            /* Typical page borders are awkward when rendered to PDF. */
-            body.pdf {
-              background-color: #FFFFFF;
-            }
-            
-            /* Adobe or wkhtmltopdf has issues with the <main> tag, so we use <div> for
-            the PDF case, <main> for the HTML case, and style both via an ID. */
-            #main {
-              background-color: #FFF;
-              margin: 10px;
-              padding: 10px;
-              border: 1px solid #E6E6E6;
-            }
-            
-            body.pdf > #main {
-              border: none;
-            }
-            
-            #container > header {
-              padding-top: 6em;
-              padding-bottom: 1em;
-            }
-            
-            body.pdf #container > header {
-              padding: 0;
-            }
-            
-            #main > #container > section {
-              margin-left: 5em;
-              position: relative;
-              display: block;
-            }
-            
-            span.fa
-            {
-              position: absolute;
-              top: 4px;
-              left: -50px;
-              font-size: 30px;
-              color: #BFC1C3;
-            }
-            
-            hr {
-              margin-top: 20px;
-              margin-bottom: 20px;
-              border: 0;
-              border-top: 1px solid #EEE;
-            }
-            
-            .tenure, .keywords {
-              font-size: 75%;
-            }
-            
-            h1 {
-              margin: 0;
-              font-size: 46px;
-            }
-            
-            h2 {
-              font-size: 24px;
-              color: #BFC1C3;
-              text-transform: uppercase;
-              font-weight: normal;
-            }
-            
-            h3 {
-              margin-bottom: 0;
-              font-size: 18px;
-            }
-            
-            a, a:visited {
-              color: #428BCA;
-              text-decoration: none;
-              font-weight: bold;
-            }
-            
-            a:hover {
-              text-decoration: underline;
-            }
-            
-            .defunct {
-              color: #989898;
-              font-weight: bold;
-            }
-            
-            #summary > p > strong {
-              font-size: 1.25em;
-            }
-            
-            
-            .label-keyword {
-              display: inline-block;
-              background: #7eb0db;
-              color: white;
-              font-size: 0.9em;
-              padding: 5px;
-              border: 1px solid #357ebd;
-              border-radius: 5px;
-              margin-top: 2px;
-            }
-            
-            .card-skills {
-                position: relative;
-            }
-            .card-nested {
-                min-height: 0;
-                margin-bottom: 10px;
-                border-width: 1px 0 0 0;
-            }
-            .card {
-                background: #FFF;
-                border-radius: 3px;
-                padding: 10px;
-            }
-            
-            .skill-level {
-              border-radius: 3px;
-              position: absolute;
-              top: 10px;
-              bottom: 10px;
-              left: 0;
-              width: 10px;
-              box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
-            }
-            .skill-level .skill-progress {
-              position: absolute;
-              border-radius: 3px;
-              bottom: 0;
-              width: 100%;
-              -webkit-transition: height 1s ease;
-            }
-            .skill-level .skill-progress.beginner {
-              height: 50%;
-              background: #e74c3c;
-            }
-            .skill-level .skill-progress.intermediate {
-              height: 70%;
-              background: #f1c40f;
-            }
-            .skill-level .skill-progress.advanced {
-              height: 80%;
-              background: #428bca;
-            }
-            .skill-level .skill-progress.master {
-              height: 95%;
-              background: #5cb85c;
-            }
-            .skill-info {
-              margin-left: 10px;
-            }
-            @media (max-width: 480px) {
-              .skill-info {
-                margin-left: 20px;
-              }
-            }
-            
-            .list-unstyled {
-              padding-left: 0;
-              list-style: none;
-            }
-            
-            .card-skills {
-              position: relative;
-            }
-            
-            .space-top {
-                margin-top: 10px;
-            }
-            
-            #container {
-              max-width: 800px;
-              margin: 0 auto;
-            }
-            
-            #elevator-pitch {
-              text-align: center;
-              font-size: 24px;
-              color: #BFC1C3;
-              text-transform: uppercase;
-              font-weight: normal;
-            }
-            
-            .res-label {
-              font-style: italic;
-            }
-        </style>
-    </head>
-    
-    <body>
-        <main id="main">
-            <div id="container">
-                <header>
-                     <h1>Simon Richard Eames</h1>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Simon Eames | Director of Engineering, Brisbane</title>
+<meta name="description" content="Simon Eames, Director of Engineering in Brisbane. Getting the product built: guiding the team from design to delivery.">
+<link rel="canonical" href="https://sreal.github.io/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://sreal.github.io/">
+<meta property="og:title" content="Simon Eames | Director of Engineering, Brisbane">
+<meta property="og:description" content="Getting the product built: guiding the team from design to delivery.">
+<meta property="og:site_name" content="Simon Eames">
+<meta property="og:locale" content="en_AU">
+<meta property="profile:first_name" content="Simon">
+<meta property="profile:last_name" content="Eames">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "dateModified": "2026-11-14",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Simon Eames",
+    "jobTitle": "Director of Engineering",
+    "url": "https://sreal.github.io/",
+    "address": { "@type": "PostalAddress", "addressLocality": "Brisbane", "addressRegion": "QLD", "addressCountry": "AU" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Queensland" },
+    "sameAs": [
+      "https://www.linkedin.com/in/simoneames/",
+      "https://github.com/sreal"
+    ]
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;600&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+  /* Layout: one reading column. Pitch first, then proof (selected work, colleagues), then the history with dates in a narrow mono column. */
+  :root {
+    --paper: #f6f7f9;
+    --ink: #1b2430;
+    --muted: #586474;
+    --rule: #dbe0e7;
+    --accent: #1f5f8b;
+    --quote: #eceff3;
+    --font-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+    --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #12171e;
+      --ink: #e5e9ef;
+      --muted: #9aa5b3;
+      --rule: #2a323d;
+      --accent: #7db4dd;
+      --quote: #1a212a;
+      color-scheme: dark;
+    }
+  }
 
-                    <div id="contact"></div>
-                </header>
-                <hr>
-                <section id="summary">
-                    <header> <span class="fa fa-lg fa-info"></span> 
-                         <h2>info</h2>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 100%;
+    line-height: 1.6;
+  }
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding-block: 4rem 3rem;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    display: grid;
+    gap: 3.5rem;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  p { margin: 0; max-width: 65ch; }
 
-                    </header> <strong><a href="mailto:">Simon Richard Eames</a> gets things built</strong>.
-                    <br
-                    />
-                    <br />He is a certified scrum master with an agile &amp; pragmatic approach.
-                    This approach aims for real value without costing quality.
-                    <br />
-                    <br />He has worked with small startups, our defence force, and in multinational
-                    teams across Europe, North America and Australia.</section>
-                <hr>
-                <section id="skills">
-                    <header>
-                         <h2>Skills</h2>
+  /* Pitch */
+  header { display: grid; gap: 1rem; }
+  .name {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(1.75rem, 5.2vw, 2.5rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .lead { font-size: 1.125rem; color: var(--muted); }
+  .links {
+    display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem;
+    list-style: none; margin: 0.25rem 0 0; padding: 0;
+    font-family: var(--font-mono); font-size: 0.875rem;
+  }
 
-                    </header> <span class="fa fa-lg fa-code"></span>
+  section { display: grid; gap: 1.25rem; }
+  h2 {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  h3 { font-family: var(--font-display); font-weight: 600; font-size: 1.0625rem; margin: 0; line-height: 1.35; }
+  h4 { font-family: var(--font-mono); font-weight: 400; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0.4rem 0 0; }
+  ul.points { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.4rem; max-width: 65ch; }
 
-                    <ul class="list-unstyled">
-                        <li class="card card-nested card-skills">
-                            <div class="skill-level" rel="tooltip" title="advanced" data-placement="left">
-                                <div class="skill-progress advanced"></div>
-                            </div>
-                            <div class="skill-info"> <strong>Agile</strong>
+  /* Team and business */
+  .facts { margin: 0; display: grid; grid-template-columns: 7.5rem 1fr; gap: 0.75rem 1.5rem; }
+  .facts dt { font-family: var(--font-mono); font-size: 0.8125rem; color: var(--muted); padding-top: 0.2rem; }
+  .facts dd { margin: 0; max-width: 60ch; }
 
-                                <div class="space-top labels"> <span class="label label-keyword">agile</span>
- <span class="label label-keyword">scrum master</span>
+  /* Selected work */
+  .case { display: grid; gap: 0.6rem; }
+  .case + .case { padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+  .case dl { margin: 0; display: grid; grid-template-columns: 7.5rem 1fr; gap: 0.5rem 1.5rem; }
+  .case dt { font-family: var(--font-mono); font-size: 0.8125rem; color: var(--muted); padding-top: 0.2rem; }
+  .case dd { margin: 0; max-width: 60ch; }
 
-                                    <span
-                                    class="label label-keyword">scrum</span> <span class="label label-keyword">kanban</span>
- <span class="label label-keyword">training</span>
+  blockquote {
+    margin: 0;
+    padding: 1.25rem 1.5rem;
+    background: var(--quote);
+    border-radius: 4px;
+    display: grid;
+    gap: 0.75rem;
+  }
+  blockquote p { font-size: 0.9375rem; }
+  cite { font-style: normal; font-size: 0.875rem; color: var(--muted); }
 
-                                        <span
-                                        class="label label-keyword">mentoring</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card card-nested card-skills">
-                            <div class="skill-level" rel="tooltip" title="advanced" data-placement="left">
-                                <div class="skill-progress advanced"></div>
-                            </div>
-                            <div class="skill-info"> <strong>Enterprise Stack</strong>
+  /* History */
+  .job { display: grid; grid-template-columns: 7.5rem 1fr; gap: 0.25rem 1.5rem; }
+  .job + .job { padding-top: 1.25rem; border-top: 1px solid var(--rule); }
+  .when {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    padding-top: 0.2rem;
+  }
+  .what { display: grid; gap: 0.6rem; min-width: 0; }
+  .org { font-weight: 400; color: var(--muted); }
 
-                                <div class="space-top labels"> <span class="label label-keyword">.net</span>
- <span class="label label-keyword">c#</span>
+  .contact p { font-size: 1.125rem; }
+  footer { font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); }
 
-                                    <span
-                                    class="label label-keyword">csharp</span> <span class="label label-keyword">mvc.net</span>
- <span class="label label-keyword">.net core</span>
+  @media (max-width: 560px) {
+    .page { padding-block: 2.5rem 2rem; gap: 2.5rem; }
+    .facts, .job, .case dl { grid-template-columns: 1fr; }
+    .facts, .case dl { gap: 0.1rem; }
+    .facts dd, .case dd { margin-bottom: 0.5rem; }
+  }
 
-                                        <span
-                                        class="label label-keyword">mssql</span> <span class="label label-keyword">marklogic</span>
- <span class="label label-keyword">powershell</span>
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #bbb; --accent: #000; --quote: #fff; }
+    body { font-size: 10.5pt; }
+    .page { max-width: none; padding: 0; gap: 1.5rem; }
+    a { text-decoration: none; }
+    blockquote { padding: 0; }
+    .case, .job, blockquote { break-inside: avoid; }
+    h2 { break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
 
-                                            <span
-                                            class="label label-keyword">iis</span> <span class="label label-keyword">specflow</span>
- <span class="label label-keyword">x/nUnit</span>
+  <header>
+    <p class="name">Simon Eames</p>
+    <h1>I'm a Director of Engineering in Brisbane. I get the product built, guiding a small team from design to delivery.</h1>
+    <p class="lead">Seventeen years building production software. For the last seven I have led engineering at a TV measurement company, and built parts of the product myself.</p>
+    <ul class="links">
+      <li><a href="#work">Selected work</a></li>
+      <li><a href="#history">Resume</a></li>
+      <li><a href="https://www.linkedin.com/in/simoneames/">LinkedIn</a></li>
+      <li><a href="https://github.com/sreal">GitHub</a></li>
+      <li><a href="mailto:"></a></li>
+    </ul>
+  </header>
 
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card card-nested card-skills">
-                            <div class="skill-level" rel="tooltip" title="advanced" data-placement="left">
-                                <div class="skill-progress advanced"></div>
-                            </div>
-                            <div class="skill-info"> <strong>Client Side</strong>
+  <section aria-labelledby="team">
+    <h2 id="team">The team</h2>
+    <dl class="facts">
+      <dt>Building</dt>
+      <dd>Interviewed and hired the engineers who took the team from two people to five.</dd>
+      <dt>Leading</dt>
+      <dd>Most of my work is with the team: talking through designs and guiding people to their own solutions.</dd>
+      <dt>Growing</dt>
+      <dd>Systems I started are now owned and extended by other engineers, including the report generator, the capture rig and the shared foundations services are built on.</dd>
+    </dl>
+  </section>
 
-                                <div class="space-top labels"> <span class="label label-keyword">node</span>
- <span class="label label-keyword">angular(js)</span>
+  <section aria-labelledby="business">
+    <h2 id="business">The business</h2>
+    <dl class="facts">
+      <dt>Saving</dt>
+      <dd>Replaced the manual build of each client's reports with automated generation.</dd>
+      <dt>Optimising</dt>
+      <dd>Directed reviews of both production databases that found about 5.7 billion rows of redundant tables to remove.</dd>
+      <dt>Expanding</dt>
+      <dd>Built the report templating that lets a new product be set up for a customer quickly, which helped the company win accounts.</dd>
+    </dl>
+  </section>
 
-                                    <span
-                                    class="label label-keyword">react</span> <span class="label label-keyword">webpack</span>
- <span class="label label-keyword">gulp</span>
+  <section aria-labelledby="work">
+    <h2 id="work">Selected work</h2>
 
-                                        <span
-                                        class="label label-keyword">grunt</span> <span class="label label-keyword">sass</span>
+    <article class="case">
+      <h3>The reach and frequency engine</h3>
+      <dl>
+        <dt>Problem</dt>
+        <dd>The company's flagship analytics needed to say how many people an ad reached across TV networks, and how often, counted once each. The raw data was impression logs, with bot traffic mixed in.</dd>
+        <dt>What I did</dt>
+        <dd>Designed and built the engine in the data warehouse. It works out de-duplicated reach and frequency from the raw impressions and filters out bot traffic by how much each source sends in a week.</dd>
+        <dt>Result</dt>
+        <dd>The flagship cross-media analytics run on it. I have maintained it across nine releases.</dd>
+      </dl>
+    </article>
 
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card card-nested card-skills">
-                            <div class="skill-level" rel="tooltip" title="intermediate" data-placement="left">
-                                <div class="skill-progress intermediate"></div>
-                            </div>
-                            <div class="skill-info"> <strong>Open Stack</strong>
+    <article class="case">
+      <h3>Client reports without the manual build</h3>
+      <dl>
+        <dt>Problem</dt>
+        <dd>Each client's Tableau reports were built by hand, one client at a time.</dd>
+        <dt>What I did</dt>
+        <dd>Built a generator that produces each client's workbooks from templates. I wrote nearly all of it over the first two years.</dd>
+        <dt>Result</dt>
+        <dd>The manual build was replaced, and the team now owns and extends the generator.</dd>
+      </dl>
+    </article>
 
-                                <div class="space-top labels"> <span class="label label-keyword">python</span>
- <span class="label label-keyword">flask</span>
+    <article class="case">
+      <h3>The capture rig</h3>
+      <dl>
+        <dt>Problem</dt>
+        <dd>Measuring streaming TV means recording what is on screen, around the clock, without someone watching each device.</dd>
+        <dt>What I did</dt>
+        <dd>Built the rig and the software that drives it: it checks what each device is showing, decides what to do next, and can be controlled remotely from Slack.</dd>
+        <dt>Result</dt>
+        <dd>Grew it to about 41 streaming devices, then handed it to the team, who run it today.</dd>
+      </dl>
+    </article>
+  </section>
 
-                                    <span
-                                    class="label label-keyword">heroku</span> <span class="label label-keyword">bash</span>
- <span class="label label-keyword">solr</span>
+  <section aria-labelledby="said">
+    <h2 id="said">What colleagues said</h2>
+    <blockquote>
+      <p>"What has always impressed me the most about Simon is that, in addition to his strong programming skills, he possesses an incredible ability to explain complex technical concepts in a very clear and understanding manner. Needless to say, my own programming knowledge has improved considerably since working with him."</p>
+      <cite>Keegan George, QA Analyst. Worked with Simon at BCA Research.</cite>
+    </blockquote>
+    <blockquote>
+      <p>"When embedded in a team, his expertise allows him to make a big impact on how the team performs by coaching, guiding and resolving difficult situations in a short period of time in a pragmatic way."</p>
+      <cite>Nisha Chaganlal, independent IT consultant. Worked with Simon at BCA Research.</cite>
+    </blockquote>
+  </section>
 
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card card-nested card-skills">
-                            <div class="skill-level" rel="tooltip" title="intermediate" data-placement="left">
-                                <div class="skill-progress intermediate"></div>
-                            </div>
-                            <div class="skill-info"> <strong>Infrastructure</strong>
+  <section aria-labelledby="history">
+    <h2 id="history">Resume</h2>
 
-                                <div class="space-top labels"> <span class="label label-keyword">vagrant</span>
- <span class="label label-keyword">docker</span>
+    <article class="job">
+      <div class="when">2019 to now</div>
+      <div class="what">
+        <h3>Director of Engineering <span class="org">· Adgile Media</span></h3>
+        <p>Engineering for a TV measurement platform, from design to delivery. Small team, hands-on throughout.</p>
+        <h4>Built</h4>
+        <ul class="points">
+          <li>The reach and frequency engine behind the flagship cross-media analytics.</li>
+          <li>Automated Tableau workbook generation, replacing a manual report build for each client.</li>
+          <li>The attention metric and the streaming ingest service that feeds it.</li>
+          <li>Internal AI tools: servers giving AI assistants controlled access to company data, and Slack tools used across the business.</li>
+        </ul>
+        <h4>Built, then handed to the team</h4>
+        <ul class="points">
+          <li>Shared foundations other engineers build services on, including the batch execution framework and a shared secrets package.</li>
+          <li>The impression-log data store.</li>
+          <li>The capture rig of about 41 streaming devices that records what is on screen.</li>
+        </ul>
+        <h4>Took over and run</h4>
+        <ul class="points">
+          <li>The platform infrastructure the product ships on, for several years: TeamCity builds, Grafana monitoring, and Kubernetes on AKS.</li>
+          <li>The brand-recognition system that identifies brands on screen.</li>
+          <li>The client data ingest.</li>
+        </ul>
+      </div>
+    </article>
 
-                                    <span
-                                    class="label label-keyword">teamcity</span> <span class="label label-keyword">jenkins</span>
- <span class="label label-keyword">atlassian</span>
+    <article class="job">
+      <div class="when">2014 to 2019</div>
+      <div class="what">
+        <h3>Senior Developer / Scrum Master <span class="org">· BCA Research</span></h3>
+        <p>Client architect for the firm's newest product. Built BCA Edge and BCA Analytics, tools the firm's macroeconomic analysts used directly. Development team lead through an agile transformation as contractors were replaced by permanent staff. Fully remote across European, North American and Australian teams for five years.</p>
+      </div>
+    </article>
 
-                                        <span
-                                        class="label label-keyword">github</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card card-nested card-skills">
-                            <div class="skill-level" rel="tooltip" title="intermediate" data-placement="left">
-                                <div class="skill-progress intermediate"></div>
-                            </div>
-                            <div class="skill-info"> <strong>Release Management</strong>
+    <article class="job">
+      <div class="when">2015 to 2016</div>
+      <div class="what">
+        <h3>Technical Lead <span class="org">· Concordia / Global Engineering Initiative</span></h3>
+        <p>Built a complete client-funded MVP used to raise funding.</p>
+      </div>
+    </article>
 
-                                <div class="space-top labels"> <span class="label label-keyword">teamcity</span>
- <span class="label label-keyword">jenkins</span>
+    <article class="job">
+      <div class="when">2013 to 2014</div>
+      <div class="what">
+        <h3>Software Engineer <span class="org">· Eventsage, Vancouver</span></h3>
+        <p>Third hire at an event-planning startup.</p>
+      </div>
+    </article>
 
-                                    <span
-                                    class="label label-keyword">heroku</span> <span class="label label-keyword">powershell</span>
+    <article class="job">
+      <div class="when">2009 to 2013</div>
+      <div class="what">
+        <h3>Software Engineer / Team Lead <span class="org">· icemedia</span></h3>
+        <p>Australian Defence Force projects including Defence Reserves Support and RAAF Amberley Heritage. Built CI/CD in a restricted environment and unified single sign-on across Exchange, SharePoint, Moodle and mobile.</p>
+      </div>
+    </article>
 
-                                        <span
-                                        class="label label-keyword">app store</span> <span class="label label-keyword">apple store</span>
+    <article class="job">
+      <div class="when">Education</div>
+      <div class="what">
+        <ul class="points">
+          <li>Bachelor of Engineering (Software), University of Queensland</li>
+          <li>Bachelor of Business Management, University of Queensland</li>
+          <li>Certified ScrumMaster, Scrum Alliance, since 2016</li>
+          <li>AI Engineering cohort, ByteByteGo, 2025</li>
+        </ul>
+      </div>
+    </article>
+  </section>
 
-                                            <span
-                                            class="label label-keyword">microsoft store</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card card-nested card-skills">
-                            <div class="skill-level" rel="tooltip" title="master" data-placement="left">
-                                <div class="skill-progress master"></div>
-                            </div>
-                            <div class="skill-info"> <strong>Tools</strong>
+  <section class="contact" aria-labelledby="contact">
+    <h2 id="contact">Contact</h2>
+    <p>Happy to talk about leading small engineering teams and building data products. <a href="mailto:"></a></p>
+  </section>
 
-                                <div class="space-top labels"> <span class="label label-keyword">emacs</span>
- <span class="label label-keyword">git</span>
+  <footer>Brisbane, Australia · Updated November 2026</footer>
 
-                                    <span
-                                    class="label label-keyword">jira</span> <span class="label label-keyword">confluence</span>
- <span class="label label-keyword">trello</span>
-
-                                        <span
-                                        class="label label-keyword">visual studio</span>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-                <hr>
-                <section id="employment">
-                    <header> <span class="fa fa-lg fa-building"></span> 
-                         <h2>employment</h2>
-
-                    </header>
-                    <div>
-                         <h3><em>Senior Developer</em>,
-    <a href="http://www.bcaresearch.com/">BCA Research</a>
-    </h3>
- <span class="tenure">2014-01 — Present</span>
-| <span class="keywords">scrum master development team lead multiple languages remote </span>
-
-                        <p>
-                            <p>Help create this global macroeconomic analyst&#39;s newest products,
-                                <a
-                                href="https://www.bcaresearch.com/bca-edge">BCA Edge</a>, <a href="https://www.bcaresearch.com/bca-analytics">BCA Analytics</a>,
-                                    and <a href="https://www.bcaresearch.com/em-equity-sector-strategy">EM Equity Sector Strategy</a>.</p>
-                        </p>
-                        <ul>
-                            <li>In a Scrum Master role, collaborate and support the product owner for
-                                the implementation of <a href="http://www.bcaresearch.com/em-equity-sector-strategy">EM Equity Sector Strategy</a>.</li>
-                            <li>Client architect for BCA Research&#39;s latest product.</li>
-                            <li>Development team lead during agile transformation as contractors where
-                                phased out for full-time staff.</li>
-                            <li>Work across multiple companies, multiple teams, multiple time zones, and
-                                multiple projects large scale work</li>
-                            <li>Currently trusted with 100% remote work</li>
-                            <li>Architect and build the development environments for use by external contractors.</li>
-                        </ul>
-                    </div>
-                    <div>
-                         <h3><em>Technical Lead</em>,
-    <a href="http://globalengineeringinitiative.com/">Concordia University</a>
-    </h3>
- <span class="tenure">2015-01 — 2016-01</span>
-| <span class="keywords">minimum viable product client management requirement gathering </span>
-
-                        <p>
-                            <p>Create the full MVP build for <a href="https://globalengineeringinitiative.com/">The Global Engineering Initiative</a>.</p>
-                        </p>
-                        <ul>
-                            <li>Complete MVP build for new client to for funding pitches</li>
-                            <li>Collaborating with clients to elicit requirements and manage their expectations.</li>
-                            <li>Install reusable/maintainable code and release processes.</li>
-                        </ul>
-                    </div>
-                    <div>
-                         <h3><em>Software Engineer</em>,
-    <a href="https://web.archive.org/web/20170103012644/https://www.eventsage.com/">Eventsage</a>
-    </h3>
- <span class="tenure">2013-01 — 2014-01</span>
-| <span class="keywords">requirement gathering agile scrumbut open stack </span>
-
-                        <p>
-                            <p>Third hire at <a href="https://web.archive.org/web/20170103012644/https://www.eventsage.com/">Eventsage</a>,
-                                an event-planning startup based in Vancouver.</p>
-                        </p>
-                        <ul>
-                            <li>Design and build initial customer engagement process for an Python, PostgreSQL,
-                                Heroku stack.</li>
-                            <li>Promote, teach and develop agile practices in a small fast startup environment.</li>
-                        </ul>
-                    </div>
-                    <div>
-                         <h3><em>Software Engineer</em>,
-    <a href="http://icemedia.com.au/">icemedia</a>
-    </h3>
- <span class="tenure">2009-01 — 2013-01</span>
-| <span class="keywords">team lead identifying business opportunities continuous integration release management technology refresh defence project enterprise development mobile development </span>
-
-                        <p>
-                            <p>Extensive experience up and down the stack at this digital service provider.</p>
-                        </p>
-                        <ul>
-                            <li>Team lead for multiple Umbraco.NET sites including <a href="http://www.defencereservessupport.gov.au/">Defence Reserves Support</a> and
-                                <a
-                                href="http://www.raafamberleyheritage.gov.au/">RAAF Amberly Heritage</a>.</li>
-                            <li>Initiated and built the proof for the Australian Defence Force Cadet&#39;s
-                                Occupation Health and Safety iOS application.</li>
-                            <li>Build deployment and CI processes for restricted environment for a complex
-                                system containing.</li>
-                            <li>Replace hand built build and release processes with automatic and single
-                                click build and release processes.</li>
-                            <li>Integration and combine authentication across multiple services (Exchange,
-                                SharePoint, Web Services, 3rd party access, FuseTalk, Moodle, mobile applications)
-                                to a single signon model.</li>
-                            <li>Replaced a custom Single Sign On Solution with a customized Unified Access
-                                Gateway implementation.</li>
-                            <li>Build in-house testing framework.</li>
-                            <li>Major tools and technology refresh including major bumps for .NET, Spring,
-                                nHibernate, Visual Studio, Exchange, MSSQL, SharePoint, and adding Unified
-                                Access Gateway.</li>
-                            <li>Multiple in-house tools to increase business function, EG. Commit and
-                                Time Logging Analysis.</li>
-                        </ul>
-                    </div>
-                </section>
-                <hr>
-                <section id="education">
-                    <header> <span class="fa fa-lg fa-mortar-board"></span> 
-                         <h2>education</h2>
-
-                    </header>
-                    <div>
-                        
-<h3><em>Bachelor of Engineering (Software)</em>,
-<a href="https://www.uq.edu.au/">University of Queensland</a>
-</h3>
-
-<span class="tenure">2000-01 — 2008-01</span>
-
-                        <p>Bachelor of Engineering (Software)</p>
-                    </div>
-                    <div>
-                        
-<h3><em>Bachelor of Business Management (Management and Organizations)</em>,
-<a href="https://www.uq.edu.au/">University of Queensland</a>
-</h3>
-
-<span class="tenure">2000-01 — 2008-01</span>
-
-                        <p>Bachelor of Business Management (Management and Organizations)</p>
-                    </div>
-                    <div>
-                        
-<h3><em>Senior Certificate</em>,
-<a href="http://www.churchie.com.au/">Anglican Church Grammar School</a>
-</h3>
-
-<span class="tenure">1999-01 — 1999-01</span>
-
-                    </div>
-                </section>
-                <hr>
-                <section id="affiliation">
-                    <header> <span class="fa fa-lg fa-share-alt"></span> 
-                         <h2>affiliation</h2>
-
-                    </header>
-                    <div>
-                         <h3><em>Member</em>,
-        <a href="https://www.scrumalliance.org">Scrum Alliance</a>
-        </h3>
- <span class="tenure">2016-01 — Present</span>
-
-                        <p><a href="https://www.scrumalliance.org/">Scrum Alliance Member</a> since
-                            2016.</p>
-                    </div>
-                    <div>
-                         <h3><em>Member</em>,
-        <a href="https://developer.apple.com/">Apple Developer Network</a>
-        </h3>
- <span class="tenure">2010-01 — Present</span>
-
-                        <p>Member of the <a href="https://developer.apple.com/">Apple Developer program</a> since
-                            2010.</p>
-                    </div>
-                    <div>
-                         <h3><em>Member</em>,
-        <a href="https://developer.android.com/">Google Play Developer</a>
-        </h3>
- <span class="tenure">2017-01 — Present</span>
-
-                        <p>Registered member of the <a href="https://developer.android.com/">Google Play Developer program</a> since
-                            2017.</p>
-                    </div>
-                </section>
-                <hr>
-                <section id="recognition">
-                    <header> <span class="fa fa-lg fa-trophy"></span> 
-                         <h2>recognition</h2>
-
-                    </header>
-                    <div>
-                         <h3><em>Certified Scrum Master</em>, Scrum Alliance</h3>
- <span class="tenure">2016</span>
-
-                    </div>
-                </section>
-                <hr>
-                <section id="testimonials">
-                    <header> <span class="fa fa-lg fa-quote-left"></span> 
-                         <h2>testimonials</h2>
-
-                    </header>
-                    <div>
-                         <h3><em>Nisha Chaganlal, Independent IT Consultant/Contractor</em></h3>
-
-                        <p>Simon is a resourceful individual, dependable, agile to the core. He&#39;s
-                            constantly looking for ways to grow personally and professionally, learning
-                            new technologies, techniques and acquiring soft skills that wil help him
-                            perform at a high standard. When embebed in a team, his expertise allows
-                            him to make a big impact on how the team performs by coaching, guiding
-                            and resolving dificult situations in a short period of time in a pragmatic
-                            way. He enjoys understanding the business domain he is working with from
-                            the customer point of view which is extremely valuable to help businesses
-                            grow by understanding the user base better, pitching in new ideas and ensuring
-                            features being developed are actually delivering value to the business.
-                            I strongly recommend Simon and I believe he would be a great asset to have
-                            if you are looking for success.</p>
-                    </div>
-                    <div>
-                         <h3><em>Keegan George, QA Analyst</em></h3>
-
-                        <p>I had the pleasure of working with Simon for over a year, at BCA, on one
-                            of their financial products. What has always impressed me the most about
-                            Simon is that, in addition to his strong programming skills, he posses
-                            an incredible ability to explain complex technical concepts in a very clear
-                            and understanding manner. Needless to say, my own programming knowledge
-                            has improved considerably since working with him. In addition he is a great
-                            team player that is always willing to help out those in need or offer insights
-                            on how the team can best tackle a program. Whether it&#39;s in a leadership
-                            or technical role, Simon will make a great addition to any team or project.</p>
-                    </div>
-                </section>
-                <hr>
-                <section id="references">
-                    <header> <span class="fa fa-lg fa-thumbs-o-up"></span> 
-                         <h2>references</h2>
-
-                    </header>
-                    <div>
-                         <h3><em></em></h3>
-
-                        <p>You just have to <a href="mailto:?subject=Let&#39;s work together">contact me</a>.</p>
-                    </div>
-                </section>
-                <hr>
-                <section id="interests">
-                    <header> <span class="fa fa-lg fa-bicycle"></span> 
-                         <h2>interests</h2>
-
-                    </header>
-                    <div>
-                         <h3><em>Running</em></h3>
- <span class="tenure">Current</span>
-
-                        <p>I&#39;ve been running a bit lately, raised the marathon count to two at
-                            the 2017 Gold Coast Marathon.</p>
-                    </div>
-                    <div>
-                         <h3><em>Photography</em></h3>
- <span class="tenure">Current</span>
-
-                        <p>I carry a camera with me most places, film or phone works for me.</p>
-                    </div>
-                    <div>
-                         <h3><em>Coding</em></h3>
- <span class="tenure">Current</span>
-
-                        <p>I&#39;ve been building something each month for one game a month (#1GAM)
-                            since 2015.</p>
-                    </div>
-                </section>
-            </div>
-        </main>
-    </body>
-
+</main>
+</body>
 </html>
