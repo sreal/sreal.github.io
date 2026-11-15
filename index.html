@@ -195,7 +195,7 @@
       api_host: PH_HOST,
       persistence: 'memory',              // no cookies or local storage, so no consent banner is needed
       person_profiles: 'identified_only', // anonymous visits only
-      disable_session_recording: true
+      session_recording: { maskAllInputs: true } // session replay on; the page has no form fields, this guards any added later
     });
   }
 </script>
